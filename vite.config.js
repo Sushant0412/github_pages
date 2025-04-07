@@ -5,6 +5,11 @@ import path from "path";
 export default defineConfig({
   plugins: [react()],
   base: "/github_pages/",
+  server: {
+    headers: {
+      "Permissions-Policy": "interest-cohort=()"
+    }
+  },
   build: {
     outDir: "dist",
     assetsDir: "assets",

@@ -1,16 +1,14 @@
 import React from "react";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
+//import homeBg from "@/assets/homeBg.jpg";
 
 function Landing() {
   return (
     <div
       className="w-full h-screen flex flex-col justify-between text-center text-white relative"
       style={{
-        backgroundImage: "url('/homeBg.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
+        backgroundColor: "#1a365d",
       }}
     >
       {/* Dark overlay */}
